@@ -1,10 +1,14 @@
 # Hi 👋, I'm Sourish Kanna
 
-<!-- 🔭 I’m currently working on ... -->
+⚡ Fun fact: I like Badminton and Cycling.
 
-🌱 I’m currently learning Artificial Intelligence and App Development
+💻 I’m exploring various domains in the computer field.
 
-⚡ Fun fact: I like Badminton and Cycling
+🚀 I’m aspiring to become a full-stack developer.
+
+🌱 I’m currently learning Artificial Intelligence and App Development in Kotlin.
+
+🔭 I’m currently working on redeveloping my college’s library website.
 
 [![Profile Views](https://komarev.com/ghpvc/?username=Sourish-Kanna&style=flat)](https://github.com/Sourish-Kanna)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sourish-kanna-97330a2a2/)
