@@ -14,7 +14,7 @@
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sourish-kanna-97330a2a2/)
 [![LeetCode](https://img.shields.io/badge/LeetCode-000000?style=flat&logo=LeetCode&logoColor=#d16c06)](https://leetcode.com/sourishkanna001/)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=Sourish-Kanna&locale=en&layout=compact&theme=transparent)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=Sourish-Kanna&locale=en&layout=compact&theme=transparent)]()
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=Sourish-Kanna&locale=en&theme=transparent&rank_icon=github&hide=issues&show_icons=true)
 
 ## Languages Used
