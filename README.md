@@ -1,14 +1,6 @@
-# Hi 👋, I'm Sourish Kanna
+# 💫 About Me
 
-⚡ Fun fact: I like Badminton and Cycling.
-
-💻 I’m exploring various domains in the computer field.
-
-🚀 I’m aspiring to become a full-stack developer.
-
-🌱 I’m currently learning Artificial Intelligence and App Development in Kotlin.
-
-🔭 I’m currently working on redeveloping my college’s library website.
+⚡ Fun fact: I like Badminton and Cycling.💻 I’m exploring various domains in the computer field.<br>🚀 I’m aspiring to become a full-stack developer.<br>🌱 I’m currently learning Artificial Intelligence and App Development in Kotlin.<br>🔭 I’m currently working on redeveloping my college’s library website.
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Sourish-Kanna&style=flat)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sourish-kanna-97330a2a2/)
@@ -16,6 +8,8 @@
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=Sourish-Kanna&locale=en&layout=compact&theme=transparent)
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=Sourish-Kanna&locale=en&theme=transparent&rank_icon=github&hide=issues&show_icons=true)
+<!-- ![GitHub Steak](https://github-readme-streak-stats.herokuapp.com/?user=Sourish-Kanna&theme=transparent&hide_border=false) -->
+<!-- ![Random Dev Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical) -->
 
 ## Tech Stack Used
 
@@ -28,7 +22,7 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Dart](https://img.shields.io/badge/dart-%2300599C.svg?style=for-the-badge&logo=dart&logoColor=white)
-![Kotlin](https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white) 
 
 ### Framework, Tools & Database
 
@@ -41,9 +35,14 @@
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Node.js](https://img.shields.io/badge/node.js-%23339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/postgresql-%23336791.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-![Netlify](https://img.shields.io/badge/netlify-%2300C7B7.svg?style=for-the-badge&logo=netlify&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 ![PythonAnywhere](https://img.shields.io/badge/pythonanywhere-%23005B9C.svg?style=for-the-badge&logo=python&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
+
+## Fun Animation
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sourish-Kanna/Sourish-Kanna/output/github-snake-dark.svg" />
