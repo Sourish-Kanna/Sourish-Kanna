@@ -1,6 +1,10 @@
 # 💫 About Me
 
-⚡ Fun fact: I like Badminton and Cycling.💻 I’m exploring various domains in the computer field.<br>🚀 I’m aspiring to become a full-stack developer.<br>🌱 I’m currently learning Artificial Intelligence and App Development in Kotlin.<br>🔭 I’m currently working on redeveloping my college’s library website.
+⚡ Fun fact: I like Badminton and Cycling.<br>
+💻 I’m exploring various domains in the computer field.<br>
+🚀 I’m aspiring to become a full-stack developer.<br>
+🌱 I’m currently learning Artificial Intelligence.<br>
+🔭 I’m currently working on developing an mobile app.
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Sourish-Kanna&style=flat)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sourish-kanna-97330a2a2/)
@@ -22,7 +26,7 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Dart](https://img.shields.io/badge/dart-%2300599C.svg?style=for-the-badge&logo=dart&logoColor=white)
-![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white) 
+![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
 
 ### Framework, Tools & Database
 
