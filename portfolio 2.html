@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sourish Kanna | Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Use Inter as the primary font */
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- Main Container -->
+  <main class="max-w-4xl mx-auto my-8 sm:my-12 p-4 sm:p-8 bg-white rounded-2xl shadow-lg ring-1 ring-slate-900/5">
+
+    <!-- Header Section -->
+    <header class="flex flex-col sm:flex-row items-center gap-6 pb-8 border-b border-slate-200">
+      <!-- Avatar -->
+      <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-indigo-500 to-teal-400 flex items-center justify-center text-white text-4xl font-bold shadow-md shrink-0">
+        SK
+      </div>
+      <!-- Info -->
+      <div class="text-center sm:text-left">
+        <h1 class="text-3xl sm:text-4xl font-bold text-slate-900">Sourish Kanna</h1>
+        <p class="text-lg text-slate-600 mt-1">B.E. Computer Engineering (2025) — Full‑Stack & AI Enthusiast</p>
+        <!-- Links -->
+        <div class="mt-4 flex flex-wrap justify-center sm:justify-start gap-3">
+          <a href="https://www.linkedin.com/in/sourish-kanna/" target="_blank" class="text-sm font-medium text-slate-700 bg-slate-100 border border-slate-200 rounded-full px-4 py-2 transition hover:bg-slate-200 hover:border-slate-300">LinkedIn</a>
+          <a href="https://github.com/Sourish-Kanna" target="_blank" class="text-sm font-medium text-slate-700 bg-slate-100 border border-slate-200 rounded-full px-4 py-2 transition hover:bg-slate-200 hover:border-slate-300">GitHub</a>
+          <a href="mailto:sourishkanna001@gmail.com" class="text-sm font-medium text-slate-700 bg-slate-100 border border-slate-200 rounded-full px-4 py-2 transition hover:bg-slate-200 hover:border-slate-300">Email</a>
+          <a href="https://calyx-production-media.s3.amazonaws.com/resume_files/Sourish-Kanna-B.E.-ComputerEngineering-2025-08-30-06-57-26-428152.pdf" target="_blank" class="text-sm font-medium bg-indigo-600 text-white rounded-full px-4 py-2 transition hover:bg-indigo-700 shadow-sm">Download Resume</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-8 border-b border-slate-200">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4">About</h2>
+      <p class="text-slate-600 leading-relaxed">
+        I'm Sourish — building web and mobile experiences that solve real problems. Currently exploring AI and working on projects involving Flutter, LangChain-style agents, and LLM-based summarization. I enjoy badminton and cycling when I'm not coding.
+      </p>
+      <!-- Info Cards -->
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+          <h3 class="font-semibold text-slate-800">Tech Stack</h3>
+          <p class="mt-1 text-sm text-slate-600">Flutter · React · Node.js · Python · LLMs · Firestore</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+          <h3 class="font-semibold text-slate-800">Interests</h3>
+          <p class="mt-1 text-sm text-slate-600">AI, Full‑stack Development, Badminton, Cycling</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+          <h3 class="font-semibold text-slate-800">Education</h3>
+          <p class="mt-1 text-sm text-slate-600">B.E. Computer Engineering — Graduating 2025</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-8 border-b border-slate-200">
+      <h2 class="text-2xl font-bold text-slate-900 mb-2">Selected Projects</h2>
+      <p class="text-slate-600 mb-4">Visit my <a href="https://github.com/Sourish-Kanna" target="_blank" class="font-medium text-indigo-600 hover:underline">GitHub</a> to see all my work.</p>
+      <ul id="repos" class="space-y-3 text-slate-600">
+        <!-- JS will populate this list -->
+        <li class="flex items-center gap-2">
+          <svg class="animate-spin h-5 w-5 text-slate-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+          <span>Loading repositories...</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Skills & Coursework Section -->
+    <section class="py-8 border-b border-slate-200">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4">Skills & Coursework</h2>
+      <p class="text-slate-600"><strong class="font-semibold text-slate-700">Core Skills:</strong> JavaScript, Dart/Flutter, React, Node.js, Python, Firestore, LangChain / Agents, LLMs & Prompting</p>
+      <h3 class="text-xl font-semibold text-slate-900 mt-6 mb-3">Coursework Highlights</h3>
+      <ul class="list-disc list-inside space-y-2 text-slate-600">
+        <li>NLP lab & mini projects (Tamil/Hindi NER, morphological analysis)</li>
+        <li>Mobile app development with Flutter (Google Sign-In migration experience)</li>
+        <li>Final year major project: Talk2DB — conversational DB querying</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-8">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4">Get In Touch</h2>
+      <p class="text-slate-600">If you'd like to collaborate or view my full resume, please reach out:</p>
+      <p class="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+        <a href="mailto:sourishkanna001@gmail.com" class="font-medium text-indigo-600 hover:underline">sourishkanna001@gmail.com</a>
+        <a href="https://www.linkedin.com/in/sourish-kanna/" target="_blank" class="font-medium text-indigo-600 hover:underline">LinkedIn</a>
+        <a href="https://calyx-production-media.s3.amazonaws.com/resume_files/Sourish-Kanna-B.E.-ComputerEngineering-2025-08-30-06-57-26-428152.pdf" target="_blank" class="font-medium text-indigo-600 hover:underline">Resume</a>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm text-slate-500 pt-8 mt-8 border-t border-slate-200">
+      © <span id="year"></span> Sourish Kanna — Built with HTML, Tailwind CSS & JS
+    </footer>
+
+  </main>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Fetch and display GitHub repositories
+    async function loadRepos() {
+      const repoList = document.getElementById("repos");
+      try {
+        const res = await fetch("https://api.github.com/users/Sourish-Kanna/repos?per_page=5&sort=updated");
+        if (!res.ok) {
+          throw new Error(`GitHub API error: ${res.status}`);
+        }
+        const data = await res.json();
+
+        // Clear loading message
+        repoList.innerHTML = "";
+
+        // Populate list with repos
+        data.forEach(repo => {
+          const li = document.createElement("li");
+          li.innerHTML = `<a href="${repo.html_url}" target="_blank" class="font-medium text-indigo-600 hover:underline">${repo.name}</a> — ${repo.description || "No description provided."}`;
+          repoList.appendChild(li);
+        });
+      } catch (e) {
+        repoList.innerHTML = "<li>Failed to load repositories. Please check the console for errors.</li>";
+        console.error(e);
+      }
+    }
+    
+    // Run the function to load repos
+    loadRepos();
+  </script>
+</body>
+</html>
