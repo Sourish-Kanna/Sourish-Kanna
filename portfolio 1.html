@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sourish Kanna | Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8fafc; color: #1e293b; margin: 0; }
+    .container { max-width: 960px; margin: auto; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden; }
+    header { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; padding: 2rem; }
+    .avatar { width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(135deg, #6366f1, #14b8a6); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 2rem; font-weight: bold; }
+    .links a { display: inline-block; margin-right: 10px; padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.9rem; text-decoration: none; color: #1e293b; }
+    .links a.resume { background: #4f46e5; color: #fff; border: none; }
+    section { padding: 2rem; border-top: 1px solid #e2e8f0; }
+    h2 { margin-top: 0; font-size: 1.5rem; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem; background: #fff; }
+    ul { margin: 0.5rem 0 0; padding-left: 1.25rem; }
+    footer { text-align: center; font-size: 0.85rem; color: #64748b; padding: 1rem; border-top: 1px solid #e2e8f0; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="avatar">SK</div>
+      <div>
+        <h1>Sourish Kanna</h1>
+        <p>B.E. Computer Engineering (Class of 2025) — Full‑Stack & AI Enthusiast</p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/sourish-kanna/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Sourish-Kanna" target="_blank">GitHub</a>
+          <a href="mailto:sourishkanna001@gmail.com">Email</a>
+          <a href="https://calyx-production-media.s3.amazonaws.com/resume_files/Sourish-Kanna-B.E.-ComputerEngineering-2025-08-30-06-57-26-428152.pdf" target="_blank" class="resume">Download Resume</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        I'm Sourish — building web and mobile experiences that solve real problems.
+        Currently learning AI and working on projects involving Flutter, LangChain-style agents,
+        and LLM-based summarization. I enjoy badminton and cycling when I'm not coding.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <h3>Tech</h3>
+          <p>Flutter · React · Node.js · Python · LLMs · Firestore</p>
+        </div>
+        <div class="card">
+          <h3>Interests</h3>
+          <p>AI, Full‑stack development, Badminton, Cycling</p>
+        </div>
+        <div class="card">
+          <h3>Education</h3>
+          <p>B.E. Computer Engineering — graduating 2025</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selected Projects</h2>
+      <p>Visit my <a href="https://github.com/Sourish-Kanna" target="_blank">GitHub</a> to see all projects.</p>
+      <ul id="repos">
+        <li>Loading repositories...</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills & Coursework</h2>
+      <p><strong>Skills:</strong> JavaScript, Dart/Flutter, React, Node.js, Python, Firestore, LangChain / Agents, LLMs & Prompting</p>
+      <h3>Coursework highlights</h3>
+      <ul>
+        <li>NLP lab & mini projects (Tamil/Hindi NER, morphological analysis)</li>
+        <li>Mobile app development — Flutter (Google Sign-In migration experience)</li>
+        <li>Final year major project: Talk2DB — conversational DB querying</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>If you'd like to work with me or view full resume, reach out:</p>
+      <p>
+        <a href="mailto:sourishkanna001@gmail.com">sourishkanna001@gmail.com</a> ·
+        <a href="https://www.linkedin.com/in/sourish-kanna/" target="_blank">LinkedIn</a> ·
+        <a href="https://calyx-production-media.s3.amazonaws.com/resume_files/Sourish-Kanna-B.E.-ComputerEngineering-2025-08-30-06-57-26-428152.pdf" target="_blank">Resume</a>
+      </p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Sourish Kanna — Built with HTML, CSS & JS
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    async function loadRepos() {
+      try {
+        const res = await fetch("https://api.github.com/users/Sourish-Kanna/repos?per_page=5&sort=updated");
+        const data = await res.json();
+        const repoList = document.getElementById("repos");
+        repoList.innerHTML = "";
+        data.forEach(repo => {
+          const li = document.createElement("li");
+          li.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a> — ${repo.description || "No description"}`;
+          repoList.appendChild(li);
+        });
+      } catch (e) {
+        document.getElementById("repos").innerHTML = "<li>Failed to load repositories</li>";
+      }
+    }
+    loadRepos();
+  </script>
+</body>
+</html>
