@@ -12,7 +12,7 @@
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=Sourish-Kanna&locale=en&layout=compact&theme=transparent)
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=Sourish-Kanna&locale=en&theme=transparent&rank_icon=github&hide=issues&show_icons=true)
-<!-- ![GitHub Steak](https://github-readme-streak-stats.herokuapp.com/?user=Sourish-Kanna&theme=transparent&hide_border=false) -->
+<!-- ![GitHub Streak](https://streak-stats.demolab.com?user=Sourish-Kanna&theme=transparent) -->
 <!-- ![Random Dev Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical) -->
 
 ## Tech Stack Used
