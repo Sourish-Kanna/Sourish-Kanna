@@ -12,9 +12,12 @@ Hi, I'm **Sourish Kanna**. I specialize in building robust solutions using **Pyt
 - 🚀 **Goal:** To engineer scalable, AI-powered applications that solve real-world problems.
 - ⚡ **Fun fact:** I love Badminton and Cycling!
 
+<div align="center">
+
 ![Profile Views](https://komarev.com/ghpvc/?username=Sourish-Kanna&style=flat)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sourish-kanna-97330a2a2/)
 <!-- [![LeetCode](https://img.shields.io/badge/LeetCode-000000?style=flat&logo=LeetCode&logoColor=#d16c06)](https://leetcode.com/sourishkanna001/) -->
+</div>
 
 ## 🛠️ Tech Stack
 
@@ -56,6 +59,8 @@ Hi, I'm **Sourish Kanna**. I specialize in building robust solutions using **Pyt
 
 ## 📊 GitHub Stats
 
+<div align="center">
+
 ![Top Langs](https://github-readme-beige-chi.vercel.app/api/top-langs?username=Sourish-Kanna&locale=en&layout=compact&theme=transparent)
 ![GitHub stats](https://github-readme-beige-chi.vercel.app/api?username=Sourish-Kanna&locale=en&theme=transparent&rank_icon=github&hide=issues&show_icons=true)
 <!-- ![GitHub Streak](https://streak-stats.demolab.com?user=Sourish-Kanna&theme=transparent) -->
@@ -65,3 +70,5 @@ Hi, I'm **Sourish Kanna**. I specialize in building robust solutions using **Pyt
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sourish-Kanna/Sourish-Kanna/output/github-snake.svg" />
   <img alt="github-snake" src="https://raw.githubusercontent.com/Sourish-Kanna/Sourish-Kanna/output/github-snake.svg" />
 </picture>
+
+</div>
