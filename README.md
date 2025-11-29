@@ -58,7 +58,7 @@ Hi, I'm **Sourish Kanna**. I specialize in building robust solutions using **Pyt
 
 ![Top Langs](https://github-readme-beige-chi.vercel.app/api/top-langs?username=Sourish-Kanna&locale=en&layout=compact&theme=transparent)
 ![GitHub stats](https://github-readme-beige-chi.vercel.app/api?username=Sourish-Kanna&locale=en&theme=transparent&rank_icon=github&hide=issues&show_icons=true)
-![GitHub Streak](https://streak-stats.demolab.com?user=Sourish-Kanna&theme=transparent)
+<!-- ![GitHub Streak](https://streak-stats.demolab.com?user=Sourish-Kanna&theme=transparent) -->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sourish-Kanna/Sourish-Kanna/output/github-snake-dark.svg" />
