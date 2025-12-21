@@ -5,7 +5,6 @@ import {
     Smartphone
 } from 'lucide-react';
 
-
 const ProjectCard = ({ project }: { project: any }) => (
     <div className="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group flex flex-col h-full">
         <div className="h-48 bg-gradient-to-br from-slate-700 to-slate-900 p-6 flex flex-col justify-center items-center relative overflow-hidden">

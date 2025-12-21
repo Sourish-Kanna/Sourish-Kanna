@@ -10,8 +10,8 @@ const PORTFOLIO_DATA = {
         name: "Sourish Kanna",
         title: "Full-Stack Developer | AI & LLM Enthusiast",
         email: "sourishkanna001@gmail.com",
-        github: "[https://github.com/Sourish-Kanna](https://github.com/Sourish-Kanna)",
-        linkedin: "[https://www.linkedin.com/in/sourish-kanna-97330a2a2/](https://www.linkedin.com/in/sourish-kanna-97330a2a2/)",
+        github: "https://github.com/Sourish-Kanna",
+        linkedin: "https://www.linkedin.com/in/sourish-kanna",
         about: "I am a Full-Stack Developer specializing in Python (FastAPI, Flask), Flutter, and the MERN stack. I have a proven track record of building complex, AI-driven systems, including multi-agent LLM platforms and NLP models. My passion lies in translating business requirements into robust, scalable solutions.",
         location: "Mumbai, India"
     },
