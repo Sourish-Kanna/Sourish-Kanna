@@ -1,194 +1,23 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Github,
   Linkedin,
   Mail,
   ExternalLink,
-  Code2,
   Terminal,
-  Database,
-  Cpu,
   Menu,
   X,
   ChevronRight,
   Download,
-  Server,
-  Smartphone
 } from 'lucide-react';
 
-// --- DATA FROM RESUME ---
-const PORTFOLIO_DATA = {
-  personal: {
-    name: "Sourish Kanna",
-    title: "Full-Stack Developer | AI & LLM Enthusiast",
-    email: "sourishkanna001@gmail.com",
-    github: "[https://github.com/Sourish-Kanna](https://github.com/Sourish-Kanna)",
-    linkedin: "[https://www.linkedin.com/in/sourish-kanna-97330a2a2/](https://www.linkedin.com/in/sourish-kanna-97330a2a2/)",
-    about: "I am a Full-Stack Developer specializing in Python (FastAPI, Flask), Flutter, and the MERN stack. I have a proven track record of building complex, AI-driven systems, including multi-agent LLM platforms and NLP models. My passion lies in translating business requirements into robust, scalable solutions.",
-    location: "Mumbai, India"
-  },
-  skills: [
-    { name: "Frontend", icon: <Code2 size={20} />, skills: ["React.js", "Next.js", "Flutter", "Tailwind CSS", "HTML5/CSS3"] },
-    { name: "Backend", icon: <Server size={20} />, skills: ["Node.js", "FastAPI", "Flask", "Python", "Express"] },
-    { name: "Database", icon: <Database size={20} />, skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Supabase"] },
-    { name: "AI & Tools", icon: <Cpu size={20} />, skills: ["LLMs (Gemini, Llama 3)", "LangChain", "Docker", "Git", "GitHub Actions"] }
-  ],
-  experience: [
-    {
-      company: "CHANGE Networks",
-      role: "App Developer Intern",
-      period: "Feb 2025 - Sep 2025",
-      description: "Developed a Flutter-based mobile application to translate web services into a responsive mobile experience. Collaborated in an agile team to build pixel-perfect visuals and identified critical backend flaws using Postman.",
-      tech: ["Flutter", "Dart", "REST APIs", "Postman"]
-    },
-    {
-      company: "CSRBOX",
-      role: "AI Intern",
-      period: "Jun 2024 - Jul 2024",
-      description: "Developed a prototype AI model using IBM Watson Studio to detect anemia from blood test reports, achieving 88% accuracy on the test dataset.",
-      tech: ["IBM Watson", "Python", "Data Analytics"]
-    },
-    {
-      company: "Finlatics",
-      role: "Data Analyst Intern",
-      period: "Mar 2024 - May 2024",
-      description: "Analyzed a 45k+ row banking dataset to identify factors influencing term deposit subscriptions. Delivered core insights through visualization that call duration was the strongest predictor.",
-      tech: ["Python", "Pandas", "Matplotlib", "Data Visualization"]
-    }
-  ],
-  projects: [
-    {
-      title: "SmartAudit LLM",
-      subtitle: "AI Multi-Agent Invoice Auditing",
-      description: "Architected a multi-agent system where agents analyze invoices from auditor, manager, and lawyer perspectives. Engineered a hybrid processing pipeline reducing manual auditing time.",
-      tags: ["Python", "FastAPI", "Llama 3", "Groq API"],
-      link: "#",
-      type: "AI & Backend"
-    },
-    {
-      title: "Next Bus",
-      subtitle: "Arrival Prediction App with CI/CD",
-      description: "A scalable bus arrival prediction app using Flutter and FastAPI. Implemented a full CI/CD pipeline using GitHub Actions to automate web and Android APK releases.",
-      tags: ["Flutter", "FastAPI", "Firebase", "CI/CD"],
-      link: "#",
-      type: "Mobile App"
-    },
-    {
-      title: "AI Cyber Laws Assistant",
-      subtitle: "Legal-Tech Q&A Platform",
-      description: "Developed a platform demystifying Indian cyber laws using Google Gemini API. Built secure authentication and a community tab for user interaction.",
-      tags: ["React", "Supabase", "Gemini API", "PostgreSQL"],
-      link: "#",
-      type: "Full Stack"
-    },
-    {
-      title: "Aathichudi Pronunciation",
-      subtitle: "NLP-Powered Tool",
-      description: "Full-stack NLP project analyzing Tamil pronunciation accuracy using Levenshtein distance algorithm with real-time feedback.",
-      tags: ["React", "FastAPI", "NLP", "Cloudinary"],
-      link: "#",
-      type: "AI & Web"
-    }
-  ]
-};
+// --- COMPONENT IMPORTS ---
+import { SectionTitle, ProjectCard, SkillCard, ExperienceCard } from './components/components';
 
-// --- COMPONENTS ---
-
-const SectionTitle = ({ children, subtitle }: { children: React.ReactNode; subtitle?: string }) => (
-  <div className="mb-12">
-    <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4 flex items-center gap-3">
-      <span className="w-8 h-1 bg-blue-500 rounded-full inline-block"></span>
-      {children}
-    </h2>
-    {subtitle && <p className="text-slate-400 max-w-2xl">{subtitle}</p>}
-  </div>
-);
-
-const SkillCard = ({ category }: { category: any }) => (
-  <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:-translate-y-1 group">
-    <div className="flex items-center gap-3 mb-4 text-blue-400 group-hover:text-blue-300">
-      <div className="p-2 bg-blue-500/10 rounded-lg">
-        {category.icon}
-      </div>
-      <h3 className="font-semibold text-lg text-slate-100">{category.name}</h3>
-    </div>
-    <div className="flex flex-wrap gap-2">
-      {category.skills.map((skill: string, idx: number) => (
-        <span key={idx} className="px-3 py-1 bg-slate-900/50 text-slate-300 text-sm rounded-full border border-slate-700/50">
-          {skill}
-        </span>
-      ))}
-    </div>
-  </div>
-);
-
-const ProjectCard = ({ project }: { project: any }) => (
-  <div className="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group flex flex-col h-full">
-    <div className="h-48 bg-gradient-to-br from-slate-700 to-slate-900 p-6 flex flex-col justify-center items-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-grid-slate-700/[0.2] bg-[length:20px_20px]" />
-      <div className="relative z-10 p-3 bg-slate-900/80 backdrop-blur-sm rounded-xl border border-slate-600">
-        {project.type === "Mobile App" ? <Smartphone size={32} className="text-blue-400" /> :
-          project.type === "AI & Backend" ? <Cpu size={32} className="text-purple-400" /> :
-            <Code2 size={32} className="text-emerald-400" />}
-      </div>
-    </div>
-    <div className="p-6 flex-1 flex flex-col">
-      <div className="flex justify-between items-start mb-2">
-        <div>
-          <span className="text-xs font-semibold text-blue-400 uppercase tracking-wider">{project.type}</span>
-          <h3 className="text-xl font-bold text-slate-100 mt-1 group-hover:text-blue-400 transition-colors">{project.title}</h3>
-        </div>
-        <a href={project.link} className="text-slate-400 hover:text-white transition-colors">
-          <ExternalLink size={20} />
-        </a>
-      </div>
-      <p className="text-sm text-slate-400 italic mb-4">{project.subtitle}</p>
-      <p className="text-slate-300 mb-6 flex-1 text-sm leading-relaxed">{project.description}</p>
-      <div className="flex flex-wrap gap-2 mt-auto">
-        {project.tags.map((tag: string, idx: number) => (
-          <span key={idx} className="px-2 py-1 bg-slate-700/50 text-slate-300 text-xs rounded border border-slate-600">
-            {tag}
-          </span>
-        ))}
-      </div>
-    </div>
-  </div>
-);
-
-const ExperienceCard = ({ exp }: { exp: any }) => (
-  <div className="relative pl-8 md:pl-0">
-    <div className="md:flex items-start justify-between gap-6 group">
-      {/* Timeline Line for Mobile */}
-      <div className="absolute left-0 top-2 bottom-0 w-px bg-slate-700 md:hidden"></div>
-      <div className="absolute left-[-4px] top-2.5 w-2 h-2 rounded-full bg-blue-500 md:hidden"></div>
-
-      <div className="md:w-1/3 mb-2 md:mb-0 md:text-right">
-        <h4 className="text-slate-100 font-semibold text-lg">{exp.company}</h4>
-        <span className="text-blue-400 text-sm font-medium">{exp.period}</span>
-      </div>
-
-      {/* Timeline Line for Desktop */}
-      <div className="hidden md:flex flex-col items-center mx-4">
-        <div className="w-3 h-3 rounded-full bg-blue-500 ring-4 ring-slate-900"></div>
-        <div className="w-px h-full bg-slate-700 my-2 group-last:hidden"></div>
-      </div>
-
-      <div className="md:w-2/3 pb-8 md:pb-12">
-        <h3 className="text-xl font-bold text-white mb-2">{exp.role}</h3>
-        <p className="text-slate-300 text-sm leading-relaxed mb-4">{exp.description}</p>
-        <div className="flex flex-wrap gap-2">
-          {exp.tech.map((t: string, i: number) => (
-            <span key={i} className="text-xs font-mono text-slate-400 bg-slate-800 px-2 py-1 rounded">
-              {t}
-            </span>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-);
+// --- DATA IMPORT ---
+import { PORTFOLIO_DATA } from './data';
 
 // --- MAIN APP COMPONENT ---
 
@@ -256,7 +85,7 @@ export default function Portfolio() {
               </button>
             ))}
             <a
-              href="[https://github.com/Sourish-Kanna](https://github.com/Sourish-Kanna)"
+              href="https://github.com/Sourish-Kanna"
               target="_blank"
               rel="noreferrer"
               className="ml-4 px-4 py-2 text-sm font-medium text-slate-900 bg-blue-500 hover:bg-blue-400 rounded-lg transition-colors flex items-center gap-2"
@@ -434,7 +263,7 @@ export default function Portfolio() {
           </div>
 
           <div className="text-center mt-12">
-            <a href="[https://github.com/Sourish-Kanna](https://github.com/Sourish-Kanna)" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium transition-colors">
+            <a href="https://github.com/Sourish-Kanna" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium transition-colors">
               View more on GitHub <ExternalLink size={16} />
             </a>
           </div>
