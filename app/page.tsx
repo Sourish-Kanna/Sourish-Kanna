@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+
+// --- ICON IMPORTS ---
 import {
-  Github,
-  Linkedin,
   Mail,
   ExternalLink,
   Terminal,
@@ -12,6 +12,7 @@ import {
   ChevronRight,
   Download,
 } from 'lucide-react';
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
 // --- COMPONENT IMPORTS ---
 import { SectionTitle, ProjectCard, SkillCard, ExperienceCard } from './components/components';
@@ -90,7 +91,7 @@ export default function Portfolio() {
               rel="noreferrer"
               className="ml-4 px-4 py-2 text-sm font-medium text-slate-900 bg-blue-500 hover:bg-blue-400 rounded-lg transition-colors flex items-center gap-2"
             >
-              <Github size={16} />
+              <SiGithub size={16} />
               GitHub
             </a>
           </div>
@@ -151,8 +152,8 @@ export default function Portfolio() {
               </div>
 
               <div className="mt-12 flex items-center justify-center md:justify-start gap-6 text-slate-500">
-                <a href={PORTFOLIO_DATA.personal.github} className="hover:text-blue-400 transition-colors"><Github size={24} /></a>
-                <a href={PORTFOLIO_DATA.personal.linkedin} className="hover:text-blue-400 transition-colors"><Linkedin size={24} /></a>
+                <a href={PORTFOLIO_DATA.personal.github} className="hover:text-blue-400 transition-colors"><SiGithub size={24} /></a>
+                <a href={PORTFOLIO_DATA.personal.linkedin} className="hover:text-blue-400 transition-colors"><SiLinkedin size={24} /></a>
                 <a href={`mailto:${PORTFOLIO_DATA.personal.email}`} className="hover:text-blue-400 transition-colors"><Mail size={24} /></a>
               </div>
             </div>
@@ -305,8 +306,8 @@ export default function Portfolio() {
       {/* --- FOOTER --- */}
       <footer className="py-8 border-t border-slate-800 text-center text-slate-500 text-sm">
         <div className="flex justify-center gap-6 mb-4">
-          <a href="#" className="hover:text-blue-400 transition-colors"><Github size={20} /></a>
-          <a href="#" className="hover:text-blue-400 transition-colors"><Linkedin size={20} /></a>
+          <a href="#" className="hover:text-blue-400 transition-colors"><SiGithub size={20} /></a>
+          <a href="#" className="hover:text-blue-400 transition-colors"><SiLinkedin size={20} /></a>
           <a href="#" className="hover:text-blue-400 transition-colors"><Mail size={20} /></a>
         </div>
         <p>© {new Date().getFullYear()} Sourish Kanna. Built with React & Tailwind.</p>
