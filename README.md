@@ -81,10 +81,8 @@ I care deeply about **real-world correctness, performance, and maintainability**
 ![Top Langs](https://github-readme-beige-chi.vercel.app/api/top-langs?username=Sourish-Kanna\&locale=en\&layout=compact\&theme=transparent\&exclude_repo=github-readme-stats)
 ![GitHub stats](https://github-readme-beige-chi.vercel.app/api?username=Sourish-Kanna\&locale=en\&theme=transparent\&rank_icon=github\&hide=issues\&show_icons=true)
 <!-- ![GitHub Streak](https://streak-stats.demolab.com?user=Sourish-Kanna&theme=transparent) -->
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Sourish-Kanna&theme=transparent)
+![GitHub Streak](https://github-readme-streak-stats-sepia-eight.vercel.app?user=Sourish-Kanna&theme=transparent)
 <!-- <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=suthakaranburaj&" alt="suthakaranburaj" /></p>-->
-
-
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sourish-Kanna/Sourish-Kanna/output/github-snake-dark.svg" />
