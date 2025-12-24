@@ -166,7 +166,7 @@ export default function Portfolio() {
                   <div className="w-3 h-3 rounded-full bg-red-500"></div>
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                   <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                  <div className="ml-auto text-xs text-slate-500 font-mono">portfolio-backend.js</div>
+                  <div className="ml-auto text-xs text-slate-500 font-mono">About-Me.js</div>
                 </div>
                 <div className="space-y-3 font-mono text-sm">
                   <div className="flex">
@@ -181,7 +181,7 @@ export default function Portfolio() {
                   </div>
                   <div className="pl-4">
                     <span className="text-slate-400 mr-2">stack:</span>
-                    <span className="text-purple-400">["MERN", "Next.js", "Python"]</span>,
+                    <span className="text-purple-400">["MERN", "Next.js", "Python", "Flutter"]</span>,
                   </div>
                   <div className="pl-4">
                     <span className="text-slate-400 mr-2">focus:</span>
