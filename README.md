@@ -1,22 +1,22 @@
 # 💫 About Me
 
-## Backend-Focused Product Engineer | AI & Data Systems | Full-Stack Builder
+## Product-Focused Backend Engineer | Data & AI Systems | Full-Stack Builder
 
-Hi, I’m **Sourish Kanna** — a **backend-focused product engineer** who enjoys building **scalable, data-driven systems** from idea to production. My core strength lies in designing **robust APIs, backend architectures, and ML-assisted products**, while also being comfortable shipping full-stack and mobile solutions when needed.
+Hi, I’m **Sourish Kanna** — a **product-focused backend engineer** who builds **real-world, data-driven systems** from idea to production. I specialize in designing **robust APIs, backend architectures, and data pipelines**, with a strong focus on **correctness, scalability, and maintainability**.
 
-I care deeply about **real-world correctness, performance, and maintainability**, not just demos.
+I care deeply about **production readiness, real user behavior, and system reliability** — not just demos.
 
 * 🔭 **Currently building:**
-  **Next Bus** – a real-world bus arrival prediction system with:
+  **Next Bus** — a real-world bus arrival prediction product with:
 
   * FastAPI backend
-  * Firestore data layer
+  * Firestore-based data layer
   * Signed Android builds with full **CI/CD**
-  * User-submitted telemetry logging for spam detection & future ML models
+  * User-submitted telemetry logging for spam detection & ML readiness
 
 * 🌱 **Currently learning:**
 
-  * Advanced **LLM orchestration & agents** (Llama 3, Gemini)
+  * Advanced **LLM orchestration & agent systems** (Llama 3, Gemini)
   * **Backend system design**, observability & DevOps best practices
 
 * 🚀 **Goal:**
@@ -78,7 +78,7 @@ I care deeply about **real-world correctness, performance, and maintainability**
 
 <div align="center">
 
-![Top Langs](https://github-readme-beige-chi.vercel.app/api/top-langs?username=Sourish-Kanna\&locale=en\&layout=compact\&theme=transparent\&exclude_repo=github-readme-stats)
+![Top Langs](https://github-readme-beige-chi.vercel.app/api/top-langs?username=Sourish-Kanna\&locale=en\&layout=compact\&theme=transparent\&exclude_repo=github-readme-stats,github-readme-streak-stats)
 ![GitHub stats](https://github-readme-beige-chi.vercel.app/api?username=Sourish-Kanna\&locale=en\&theme=transparent\&rank_icon=github\&hide=issues\&show_icons=true)
 <!-- ![GitHub Streak](https://streak-stats.demolab.com?user=Sourish-Kanna&theme=transparent) -->
 ![GitHub Streak](https://github-readme-streak-stats-sepia-eight.vercel.app?user=Sourish-Kanna&theme=transparent)
