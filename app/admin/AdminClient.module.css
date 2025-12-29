@@ -1,0 +1,31 @@
+/* app/admin/AdminClient.module.css */
+
+.inputField {
+    background-color: #0f172a;
+    /* slate-900 */
+    border: 1px solid #334155;
+    /* slate-700 */
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: white;
+    outline: none;
+}
+
+.inputField:focus {
+    border-color: #3b82f6;
+    /* blue-500 */
+}
+
+.btnPrimary {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btnPrimary:hover {
+    background-color: #1d4ed8;
+}

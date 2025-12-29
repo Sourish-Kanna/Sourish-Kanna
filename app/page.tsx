@@ -19,6 +19,8 @@ import { SectionTitle, ProjectCard, SkillCard, ExperienceCard } from './componen
 
 // --- DATA IMPORT ---
 import { PORTFOLIO_DATA } from './data';
+// import connectDB from "@/lib/db";
+// import { Project, Personal, Experience, Skill } from "@/models/models";
 
 // --- MAIN APP COMPONENT ---
 
