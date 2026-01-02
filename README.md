@@ -91,3 +91,7 @@ I care deeply about **production readiness, real user behavior, and system relia
 </picture>
 
 </div>
+
+---
+
+> 📌 **Note:** The source code for my portfolio website is maintained on the `portfolio` branch of this repository.
