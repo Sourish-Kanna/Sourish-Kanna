@@ -1,6 +1,6 @@
 import connectDB from "@/lib/db";
 import { Project, Personal, Experience, Skill } from "@/models/models";
-import PortfolioClient from "./components/PortfolioClient";
+import PortfolioClient from "./PortfolioClient";
 
 // Force dynamic rendering so the page updates when you add new data
 export const dynamic = 'force-dynamic';

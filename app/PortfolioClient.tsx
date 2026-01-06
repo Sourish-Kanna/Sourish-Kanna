@@ -15,7 +15,7 @@ import {
     Server,
 } from 'lucide-react';
 import { SiGithub, SiLinkedin } from "react-icons/si";
-import { SectionTitle, ProjectCard, SkillCard, ExperienceCard } from './components';
+import { SectionTitle, ProjectCard, SkillCard, ExperienceCard } from './components/components';
 
 // Helper to map icon names string to actual Icon components
 const iconMap: any = {
@@ -128,6 +128,12 @@ export default function PortfolioClient({ personal, skills, experience, projects
                             <SiGithub size={16} />
                             GitHub
                         </a>
+                        <a
+                            href="/auth/signin"
+                            className="px-4 py-2 text-sm font-medium text-white bg-slate-700 hover:bg-slate-600 rounded-lg transition-colors border border-slate-600"
+                        >
+                            Login
+                        </a>
                     </div>
 
                     <button className="md:hidden text-slate-300" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -147,6 +153,12 @@ export default function PortfolioClient({ personal, skills, experience, projects
                                     {link.name}
                                 </button>
                             ))}
+                            <a
+                                href="/auth/signin"
+                                className="text-left text-slate-300 hover:text-blue-400 py-2"
+                            >
+                                Login
+                            </a>
                         </div>
                     </div>
                 )}

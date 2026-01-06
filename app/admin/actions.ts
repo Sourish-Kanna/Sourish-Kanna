@@ -116,6 +116,7 @@ export async function updatePersonal(formData: FormData) {
     revalidatePath("/");
 }
 
+// --- LOGOUT ACTION ---
 export async function logout() {
-    await signOut({ redirectTo: "/auth/signin" }); // Redirects to login page after logout
+    await signOut({ redirectTo: "/?loggedOut=true" }); // Redirects to login page after logout
 }

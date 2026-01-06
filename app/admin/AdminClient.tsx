@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { saveProject, saveExperience, saveSkill, updatePersonal, deleteProject, deleteExperience, deleteSkill } from "@/app/actions";
+import { saveProject, saveExperience, saveSkill, updatePersonal, deleteProject, deleteExperience, deleteSkill } from "@/app/admin/actions";
 import styles from "./AdminClient.module.css";
 
 export default function AdminClient({ personalData, projects, experiences, skills }: any) {

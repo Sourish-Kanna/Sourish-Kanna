@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import connectDB from "@/lib/db";
 import { Project, Personal, Experience, Skill } from "@/models/models";
 import AdminClient from "./AdminClient";
-import { logout } from "@/app/actions"; // <--- Import the action
+import { logout } from "@/app/admin/actions"; // <--- Import the action
 
 export default async function AdminPage() {
     const session = await auth();
