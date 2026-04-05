@@ -27,15 +27,14 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         async signIn({ user }) {
             return user.email === process.env.ADMIN_EMAIL;
         },
-        async redirect({ url, baseUrl }) {
-            const adminUrl = new URL("/admin", baseUrl).href;
-
-            if (url === "/" || url === baseUrl) {
-                return adminUrl;
+        async redirect({ url }) {
+            // If successful login, force go to /admin regardless of baseUrl detection
+            if (url.includes("/signin") || url.includes("/auth")) {
+                return "/admin";
             }
-
-            if (url.startsWith("/")) return new URL(url, baseUrl).href;
-            return baseUrl;
+            // Allow internal relative redirects
+            if (url.startsWith("/")) return url;
+            return "/";
         },
       },
 });
