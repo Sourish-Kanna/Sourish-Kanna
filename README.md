@@ -1,28 +1,35 @@
 # 💫 About Me
 
-## Product-Focused Backend Engineer | Data & AI Systems | Full-Stack Builder
+## Backend Engineer | Data-Driven Systems | Full-Stack Builder
 
-Hi, I’m **Sourish Kanna** — a **product-focused backend engineer** who builds **real-world, data-driven systems** from idea to production. I **build products end-to-end**, from system design and implementation to deployment, with a specialization in backend architecture, APIs, and data systems.
+Hi, I’m **Sourish Kanna** — a backend-focused engineer who builds real-world products from idea to deployment. I enjoy designing APIs, working with data systems, and building reliable software that solves practical problems.
 
-I care deeply about **production readiness, real user behavior, and system reliability**, not just demos.
+I’m currently developing my skills in backend architecture, distributed systems, cloud, and DevOps through hands-on projects.
 
 * 🔭 **Currently building:**
 
-  [**Next Bus**](https://github.com/Sourish-Kanna/Next-Bus) — A production-focused bus arrival prediction platform built around real-world telemetry, scalable backend services, and reliable deployment.
+  [**Next Bus**](https://github.com/Sourish-Kanna/Next-Bus) — A bus arrival prediction platform focused on backend services, real-world telemetry, reliable deployment, and ML-ready data pipelines.
+
   * FastAPI backend
   * Firestore data layer
-  * Signed Android releases
-  * Automated CI/CD
-  * User telemetry collection
-  * ML-ready data pipeline
+  * Flutter Android app
+  * CI/CD and signed releases
 
+  [**ExpendiNote**](https://github.com/Sourish-Kanna/ExpendiNote) — A Flutter expense tracker for recording daily spending and analyzing expenses.
+
+  * Flutter and Material 3
+  * SQLite local database
+  * Spending summaries and analytics
+  * CSV export and JSON backup/restore
+  
 * 🌱 **Currently learning:**
 
-  * **Backend system design**, distributed systems & scalable API architecture
-  * **Cloud, Docker, CI/CD, observability & DevOps** best practices
+  * Backend system design, distributed systems & scalable API architecture
+  * Cloud, Docker, CI/CD, observability & DevOps
 
 * 🚀 **Goal:**
-  To build **production-grade backend systems** and **AI-powered products** that solve real-world problems.
+
+  To build production-grade backend systems and AI-powered products that solve real-world problems.
 
 <div align="center">
 
