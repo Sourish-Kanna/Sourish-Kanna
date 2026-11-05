@@ -2,25 +2,28 @@ name: Update README cards
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs once daily at midnight
+    - cron: "0 0 * * *" # Runs once daily at midnight UTC
+  push:
+    paths:
+      - ".github/workflows/readme-cards.yml"
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
-
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout Repository
+        uses: actions/checkout@v6
 
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
           options: username=Sourish-Kanna&show_icons=true&theme=transparent&rank_icon=github
-          path: profile/stats.svg
+          path: dist/profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate top languages card
@@ -28,7 +31,7 @@ jobs:
         with:
           card: top-langs
           options: username=Sourish-Kanna&layout=compact&langs_count=6&theme=transparent&exclude_repo=github-readme-stats,github-readme-streak-stats
-          path: profile/top-langs.svg
+          path: dist/profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card
@@ -36,13 +39,14 @@ jobs:
         with:
           card: pin
           options: username=Sourish-Kanna&repo=Next-Bus&theme=transparent
-          path: profile/pin-next-bus.svg
+          path: dist/profile/pin-next-bus.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit cards
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/*.svg
-          git commit -m "Update README cards" || exit 0
-          git push
+      - name: Deploy to Output Branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
+          keep_files: true
+          commit_message: "Update README cards [skip ci]"
