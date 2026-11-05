@@ -1,0 +1,31 @@
+name: Generate pin card
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 10
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Next Bus
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=Sourish-Kanna&repo=Next-Bus&theme=transparent
+          path: dist/pin/pin-next-bus.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy to Output Branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
+          keep_files: true
+          commit_message: "Update README cards [skip ci]"

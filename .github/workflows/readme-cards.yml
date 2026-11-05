@@ -22,7 +22,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=Sourish-Kanna&show_icons=true&theme=transparent&rank_icon=github
+          options: username=Sourish-Kanna&locale=en&show_icons=true&theme=transparent&rank_icon=github&hide=issues
           path: dist/profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -30,16 +30,8 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=Sourish-Kanna&layout=compact&langs_count=6&theme=transparent&exclude_repo=github-readme-stats,github-readme-streak-stats
+          options: username=Sourish-Kanna&locale=en&layout=compact&theme=transparent&exclude_repo=github-readme-stats,github-readme-streak-stats
           path: dist/profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Generate pin card
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: pin
-          options: username=Sourish-Kanna&repo=Next-Bus&theme=transparent
-          path: dist/profile/pin-next-bus.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy to Output Branch

@@ -87,9 +87,12 @@ I’m currently developing my skills in backend architecture, distributed system
 
 <div align="center">
 
-  ![Top Langs](https://github-readme-beige-chi.vercel.app/api/top-langs?username=Sourish-Kanna\&locale=en\&layout=compact\&theme=transparent\&exclude_repo=github-readme-stats,github-readme-streak-stats)
+  <!--![Top Langs](https://github-readme-beige-chi.vercel.app/api/top-langs?username=Sourish-Kanna\&locale=en\&layout=compact\&theme=transparent\&exclude_repo=github-readme-stats,github-readme-streak-stats)
   ![GitHub stats](https://github-readme-beige-chi.vercel.app/api?username=Sourish-Kanna\&locale=en\&theme=transparent\&rank_icon=github\&hide=issues\&show_icons=true)
-  ![GitHub Streak](https://github-readme-streak-stats-sepia-eight.vercel.app?user=Sourish-Kanna&theme=transparent)
+  ![GitHub Streak](https://github-readme-streak-stats-sepia-eight.vercel.app?user=Sourish-Kanna&theme=transparent)-->
+  <img src="https://raw.githubusercontent.com/Sourish-Kanna/Sourish-Kanna/output/profile/top-langs.svg" alt="Top Langs" />
+  <img src="https://raw.githubusercontent.com/Sourish-Kanna/Sourish-Kanna/output/profile/stats.svg" alt="GitHub Stats" />
+  <img src="https://raw.githubusercontent.com/Sourish-Kanna/Sourish-Kanna/output/streak/streak.svg" alt="GitHub Streak" />
   <!-- Alt Links -->
   <!-- ![GitHub Streak](https://streak-stats.demolab.com?user=Sourish-Kanna&theme=transparent)
   ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Sourish-Kanna&theme=transparent) -->
