@@ -98,9 +98,9 @@ I’m currently developing my skills in backend architecture, distributed system
   ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Sourish-Kanna&theme=transparent) -->
 
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sourish-Kanna/Sourish-Kanna/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sourish-Kanna/Sourish-Kanna/output/github-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/Sourish-Kanna/Sourish-Kanna/output/github-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sourish-Kanna/Sourish-Kanna/output/snake/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sourish-Kanna/Sourish-Kanna/output/snake/github-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/Sourish-Kanna/Sourish-Kanna/output/snake/github-snake.svg" />
 </picture>
 
 </div>
